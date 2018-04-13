@@ -1,0 +1,403 @@
+/*
+Theme Name: Custom Obsidian Template
+Author: Romwil Dalisay
+Version: 1.2
+*/
+
+/*
+@import url('menu-iyc.css');
+@import url('css/side_sidebar.css');
+*/
+.left{
+	float: left;
+}
+.right{
+	float:right;
+}
+.underline{
+	text-decoration: underline;
+}
+.clear{
+	clear:both;
+}
+.center-logo{
+	position: absolute;left: 50%;-webkit-transform: translateX(-50%);transform: translateX(-50%);
+}
+.shadow-top{
+    -webkit-box-shadow: 5px -1px 20px -5px #969191;
+    -moz-box-shadow:    5px -1px 20px -5px #969191;
+    box-shadow:         5px -1px 20px -5px #969191;
+}
+.bottom-block-2 > a:hover,.bottom-block > a:hover{
+	color: #47fde4 !important;
+	text-decoration: none !important;
+}
+/*------------------------------------*\
+    Fonts
+\*------------------------------------*/
+@font-face {
+	font-family: 'trajan-1';
+	src: url('includes/css/fonts/TrajanPro-Bold.otf');
+	font-weight: normal !important;
+}
+@font-face {
+	font-family: 'trajan-2';
+	src: url('includes/css/fonts/TrajanPro-Regular.otf');
+	font-weight: normal !important;
+}
+@font-face {
+	font-family: 'trajan-regular';
+	src: url('includes/css/fonts/trajan-regular.ttf') format('truetype');
+	font-weight: normal !important;
+}
+@font-face {
+	font-family: 'georgia';
+	src: url('includes/css/fonts/georgia.ttf') format('truetype');
+	font-weight: normal !important;
+}
+@font-face {
+  font-family: 'roboto';
+  src: url('includes/css/fonts/Roboto-Black.ttf') format('ttf');
+}
+@font-face {
+	font-family: 'montserrat-1';
+	/*src: url('fonts/HelveticaLTStd-LightCond.otf');*/
+	src: url('includes/css/fonts/Montserrat-Regular.otf');
+	font-weight: normal !important;
+}
+@font-face {
+	font-family: 'montserrat-2';
+	/*src: url('fonts/HelveticaLTStd-LightCond.otf');*/
+	src: url('includes/css/fonts/Montserrat-Light.otf');
+	font-weight: normal !important;
+}
+/*------------------------------------*\
+    Default Hidden
+\*------------------------------------*/
+.center{ text-align: center; }
+.top-nav-holder-768,
+.sidebar-768 {
+	display: none;
+}
+
+.banner-block, .banner-block-left{
+	width: 11.111%;
+	float: left;
+	max-height: 287px;
+}
+.banner-block > img{
+	width: 100%;
+	padding-right: 5px;
+	max-height: 287px;
+}
+.banner-block-left > img{
+	width: 100%;
+	padding-left: 0px;
+	max-height: 287px;
+}
+.georgia{
+	font-family: 'georgia';
+}
+
+.nav-desktop, .nav-footer{
+	text-align: center;
+}
+ul.nav-desktop li, ul.nav-footer li {
+	display: inline-block;
+}
+.sidebar-480 {
+	display: none;
+}
+.white{
+	color:white;
+}
+.black{
+	color:black;
+}
+.wrap_content{
+	width: 100%;
+	padding-left:80px;
+	padding-right:80px;
+}
+/*------------------------------------*\
+    END OF DEFAULT
+\*------------------------------------*/
+/*------------------------------------*\
+    LOGO
+\*------------------------------------*/
+img.custom-logo {
+  width: 275px;
+  height: 195px;
+  position: relative;
+  bottom: 5px;
+}
+.line-default{
+	float:right;
+	border:1px solid #ebe3bc;
+  width: 100%;
+  max-width: 800px;
+}
+/*------------------------------------*\
+    LEFT MENU
+\*------------------------------------*/
+.left-menu{
+ list-style-type: none;
+ background-color: #ffffff52;
+ padding: 15px;
+ border: 1px solid white;
+ position: absolute;
+ width: 90%;
+}
+.left-menu > .left-menu-item {
+ margin-bottom:10px;
+ padding-top:7px;
+ padding-bottom:7px;
+}
+.left-menu > .left-menu-item > a {
+	color:white;
+	padding-left:10px;
+}
+.left-menu > .left-menu-item > a:hover {
+	text-decoration: none;
+}
+.left-menu > .left-menu-item:hover {
+	background-color:#660808;
+	text-decoration: none;
+}
+/*------------------------------------*\
+    BANNER MIDDLE
+\*------------------------------------*/
+.bg-block-content-2 > div > .header {
+	color:white;
+}
+.txt-banner-container{
+	padding-top:30px;padding-left:3%;padding-bottom:30px;padding-right:30px;
+}
+.bg-block-content-2 > div > .sub-text {
+	color:#e7e8e2e0;
+}
+.red-btn{
+	border:1px solid white;
+	background-color:#660808;
+	color:white;
+	font-size:23px;
+	font-weight: 600;
+	padding-left:80px;
+	padding-right:80px;
+	padding-top:10px;
+	padding-bottom:10px;
+}
+/*------------------------------------*\
+    LINK CONTAINER
+\*------------------------------------*/
+.link-container{
+	background-color:#e0d6ab;
+	padding-top:40px;
+	padding-bottom:40px;
+}
+.link-block{
+	width:100%;
+	padding:20px;
+	display:block;
+}
+.text-link-block{
+	width:100%;
+	padding-top:0px;
+	padding-bottom:10px;
+	padding-left:20px;
+	padding-right:20px;
+	display:block;
+}
+.text-link-block > a{
+	display: block;
+	font-size: 24px;
+	font-weight: 600;
+	color: #660808;
+	border: 2px solid #660808;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 20px;
+	padding-right: 20px;
+	width: 300px;
+	text-align: center;
+	margin: 0 auto;
+	position: relative;
+	top: 20px;
+}
+.text-link-block > span {
+	font-size: 17px;
+	text-align: center;
+	display: block;
+}
+.img-link{
+	height: 400px;
+}
+.img-link > span {
+	position: absolute;
+	bottom: 21px;
+	font-size: 30px;
+	background-color: #790c00a3;
+	color: white;
+	padding-top: 20px;
+	padding-right: 25px;
+	padding-left: 25px;
+	padding-bottom: 20px;
+	width: 91.5%;
+}
+/*------------------------------------*\
+    BANNER FOOTER
+\*------------------------------------*/
+.banner-footer-container{
+	background-color:#e0d6ab;
+	padding-top:40px;
+	padding-bottom:40px;
+}
+.wrapper-banner{
+  width: 75%;
+  margin: 0 auto;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.bg-banner-footer-1{
+	padding-bottom: 35px;
+}
+.bg-banner-footer-1 > div.wrapper-banner > span.header{
+	color: white;
+	display: block;
+	text-align: center;
+	font-size: 32px;
+}
+.bg-banner-footer-1 > div.wrapper-banner > span.sub-header{
+	color: white;
+	display: block;
+	text-align: center;
+	font-size: 15px;
+	width: 70%;
+	display: block;
+	margin: 0 auto;
+}
+.bg-banner-footer-1 > div.wrapper-banner > a {
+	background-color: #660808;
+	color: white;
+	padding-top: 16px;
+	padding-bottom: 16px;
+	font-size: 17px;
+	text-transform: uppercase;
+	padding-left: 30px;
+	padding-right: 30px;
+	border: 2px solid white;
+	position: relative;
+	top: 30px;
+	display: block;
+	text-align: center;
+	width: 65%;
+	margin: 0 auto;
+}
+/*------------------------------------*\
+    FOOTER
+\*------------------------------------*/
+.footer-block{
+	width:100%;
+}
+.footer-block > .header{
+	color: #660808;
+	font-size: 21px;
+	font-weight: 600;
+}
+.footer-menu{
+	list-style-type: none;
+  padding-top: 15px;
+	padding-bottom:15px;
+  width: 100%;
+}
+.footer-menu > li{
+	margin-bottom:10px;
+}
+.footer-menu > li > a{
+	font-size:18px;
+}
+.project-list{
+	padding-top:15px;
+	padding-left:20px;
+}
+.project-list > li{
+	padding-left:3px;
+	margin-bottom:25px;
+}
+.project-list > li > a{
+	text-decoration: underline;
+}
+.footer-block > span.content {
+	margin-top:10px;
+	display: block;
+}
+.email-submit{
+	background-color: #660808;
+  color: white;
+  text-decoration: none;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 9px;
+  padding-bottom: 9px;
+  border: 2px solid white;
+  font-size: 19px;
+}
+.icon-footer{
+	width: 45px;
+	padding-left: 0px;
+	padding-right: 15px;
+	position: relative;
+	top: 2px;
+}
+.copyright-container{
+	background-color: #e0d6ab;
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+.copyright {
+	margin: 0 auto;
+	text-align: center;
+	font-size: 18px;
+}
+.divider{
+	background-color: #660808;
+	width:100%;
+}
+.footer-a{
+	width:20%;
+	padding:5px;
+}
+.footer-b{
+	width:26%;
+	padding:5px;
+}
+.footer-c{
+	width:20%;
+	padding:5px;
+}
+.footer-d{
+	width:33%;
+	padding:5px;
+}
+@media only screen and (max-width: 1367px) {
+	.bg-banner-footer-1 > div.wrapper-banner > a{
+		background-color: #660808;
+    color: white;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    font-size: 1.3vw;
+    text-transform: uppercase;
+    padding-left: 30px;
+    padding-right: 30px;
+    border: 2px solid white;
+    position: relative;
+    top: 30px;
+    display: block;
+    text-align: center;
+    width: 82%;
+    margin: 0 auto;
+	}
+	.txt-banner-container{
+		padding-top:30px;padding-left:60px;padding-bottom:30px;padding-right:30px;
+	}
+}

@@ -1,0 +1,23 @@
+.mobiletop {
+	display: none;
+}
+@media screen and (max-width: 999px) {
+	.mobiletop li a {
+	    font-size: 2vw !important;
+	    display: block;
+	}
+	li.menu-item {
+	    padding-top: 0.2vw;
+	    padding-bottom: 0.4vw;
+	    margin-left: 0px;
+	}
+	.mobiletop, .top-nav-holder-768 {
+		display: block;
+	}
+	.ribbon{
+		display: none;
+	}
+	.ribbon-mobile{
+		display: block;
+	}	
+}
