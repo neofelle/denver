@@ -36,6 +36,16 @@
 			background:url("<?php bloginfo('template_directory'); ?>/images/home/ribbon-red-bg.jpg") no-repeat;
 			background-position: center 50px;
 		}
+		.bg-block-content-2-mobile {
+			background:url("<?php bloginfo('template_directory'); ?>/images/denver-home/mobile-banner.jpg") no-repeat;
+			background-size: cover;
+			background-position: center center;
+		}
+		.bg-block-content-3-mobile {
+			background:url("<?php bloginfo('template_directory'); ?>/images/denver-home/mobile-banner-2.jpg") no-repeat;
+			background-size: cover;
+			background-position: center center;
+		}
 		.bg-block-content-1 {
 			background:url("<?php bloginfo('template_directory'); ?>/images/denver-home/repeat-bg.jpg") no-repeat;
 			background-size: cover;

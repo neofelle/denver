@@ -16,7 +16,7 @@
 .mobiletop {
   height: 40px;
   width: 100%;
-  background: #102257;
+  background: #650808;
   font-size: 1em;
   font-family: 'opensans', 'Arial';
   font-weight: bold;
@@ -70,6 +70,8 @@
       width: 100%;
       display: block;
       height: auto;
+      top: 17px;
+      position: relative;  
     }
     .mobiletop li {
       width: 100%;

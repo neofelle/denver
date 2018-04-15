@@ -3,7 +3,7 @@
 }
 @media screen and (max-width: 999px) {
 	.mobiletop li a {
-	    font-size: 2vw !important;
+	    font-size: 4vw !important;
 	    display: block;
 	}
 	li.menu-item {

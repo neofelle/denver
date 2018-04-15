@@ -381,10 +381,6 @@ p, ul,
 		display: block;
 	}
 
-	p, ul, .col-1 .content .title-2 {
-		font-size: 4vw;
-	}
-
 	.main-content {
 		padding: 4%;
 	}
