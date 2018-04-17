@@ -219,6 +219,31 @@ img.custom-logo {
 	background-color:#660808;
 	text-decoration: none;
 }
+
+
+.left-menu-pages{
+ list-style-type: none;
+ background-color: #1d0304;
+ padding: 15px;
+ border: 1px solid white;
+ width: 90%;
+}
+.left-menu-pages > .left-menu-item {
+ margin-bottom:10px;
+ padding-top:7px;
+ padding-bottom:7px;
+}
+.left-menu-pages > .left-menu-item > a {
+	color:white;
+	padding-left:10px;
+}
+.left-menu-pages > .left-menu-item > a:hover {
+	text-decoration: none;
+}
+.left-menu-pages > .left-menu-item:hover {
+	background-color:#660808;
+	text-decoration: none;
+}
 /*------------------------------------*\
     BANNER MIDDLE
 \*------------------------------------*/
@@ -567,6 +592,19 @@ img.custom-logo {
 	padding-bottom: 20px;
 	padding-right: 5px;
 	padding-left: 5px;
+}
+/* Pages CSS */
+.page-menu{
+	background-color:#e0d6ab;
+	display:-webkit-box;
+	height:auto;
+	clear:both;
+	padding-top:45px;
+	padding-bottom:45px;
+}
+.page-content-right{
+	padding-left:10px;
+	padding-right: 10px;
 }
 @media only screen and (max-width: 868px) {
 	.link-container{

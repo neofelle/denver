@@ -41,7 +41,7 @@ Template Name: Homepage
 				</div>
 			</section>
 			<section class="page-content">
-				<div class="wrap_content page-menu" style="padding-bottom: 0px;">
+				<div class="wrap_content_pages page-menu" style="padding-bottom: 0px;">
 					<div class="col-md-3 left">
 						<div class="left_menu">
 							<?php
@@ -61,11 +61,46 @@ Template Name: Homepage
 						</div>
 					</div>
 					<div class="col-md-9 left page-content-right">
-						<?php
-						    while ( have_posts() ) : the_post();
-						        get_template_part( 'template-parts/page/content', 'page' );
-						    endwhile; // End of the loop.
-						?>
+						<article id="post-5" class="post-5 page type-page status-publish hentry">
+							<div class="col-md-12">
+								<header class="entry-header">
+									<h1 class="entry-title">Contact Us</h1>
+								</header>
+								<div class="col-md-7 left" style="padding-left:0px;">
+									<img src="http://localhost/tim/wordpress/denver/wp-content/uploads/2018/04/map.jpg"/>
+									<br/><br/>
+									<div class="col-md-5 left">
+										Holistic Web Presence®
+										<br/>
+										258 South 700 East, Salt Lake City, Utah 84102
+										<br/>
+										+1 (801) 349 8226
+									</div>
+									<div class="col-md-7 left">
+										<div style="float:right;">
+											Follow Us
+											<br/>
+											<table>
+												<tr>
+													<td><a href="#"><img class="social-media" src="http://localhost/tim/wordpress/denver/wp-content/uploads/2018/04/facebook.png"></td>
+													<td><a href="#"><img class="social-media" src="http://localhost/tim/wordpress/denver/wp-content/uploads/2018/04/twitter.png"></a></td>
+													<td><a href="#"><img class="social-media" src="http://localhost/tim/wordpress/denver/wp-content/uploads/2018/04/google.png"></a></td>
+													<td><a href="#"><img class="social-media" src="http://localhost/tim/wordpress/denver/wp-content/uploads/2018/04/linkedin.png"></a></td>
+												</tr>
+											</table>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-5 left">
+									<div class="form container">
+										<span class="white-header">How can we help you?</span>
+										<div class="contact-container">
+											<?php echo do_shortcode( '[contact-form-7 id="81" title="Contact Us"]' ); ?>
+										</div>
+									</div>
+								</div>
+							</div>
+						</article>
 					</div>
 				</div>
 			</section>

@@ -182,4 +182,19 @@ Template Name: Homepage
 
 			</section>
 
+	      	<section class="banner-footer-desktop">
+		        <div class="row banner-footer-container">
+		          <div class="wrap_content">
+		            <div class="bg-banner-footer-1" style="width:100%;">
+		              <div class="wrapper-banner">
+		                <span class="header">Are you looking for a way to keep your wine collection organized so that you can show your prized vintages off to guests?</span>
+		                <br/>
+		                <span class="sub-header">Show your authority over your hobby. Learn how to organize your treasured wine collection so that entertaining your family and friends can turn into an engaging and lively experience!</span>
+		                <br class="clearr"/>
+		                <a href="#">Be one step closer to owning your one-of-a-kind wine cellar</a>
+		              </div>
+		            </div>
+		          </div>
+		        </div>
+		    </section>
 <?php get_footer(); ?>

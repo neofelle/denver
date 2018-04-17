@@ -1,90 +1,73 @@
-<?php get_header('single'); ?>
-        <br class="clear">
-        <section class="blog" style="background-color: white !important;">
-            <div class="col-md-12 page-content" style="width: 100%;padding-right: 20px;padding-left: 30px;margin: 0 auto;display: block;">
-                <h2 class="uppercase title"><?php the_title();?></h2>
-                <div class="featured-img">
-                    <?php 
-                        if ( has_post_thumbnail() ) {
-                            the_post_thumbnail();
-                        }  
-                    ?>
-                </div>
-                <br>
-                <?php
-                    while ( have_posts() ) : the_post();
-
-                        get_template_part( 'template-parts/page/content', 'page' );
-                        the_content();
-
-                    endwhile; // End of the loop.
-
-
-                ?>
-            </div>      
-        </section>
-
-      </div>
-    </div>
-  </section>
-
-
-<section class="ribbon-mobile">
-    <div class="col-md-12 left" style="padding-left: 10px;padding-right:10px;margin: 0px;">
-        <div class="bg-1" style="background-color: #be0a2f;margin: 0px;padding: 0px;padding-top: 20px;">
-            <span class="footnote-m-1 center">Wine Cellar Design</span>
-            <br/>
-            <span class="footnote-m-2">3D Drawing <br/> Request</span>
-            <br/>
-            <span class="footnote-m-1 center">We will create a unique <br/>design just for you!</span>
-            <br/><br/>
-            <a class="button-blue" href="#">Click Here</a>
-            <br/>
-        </div>
-        <img class="img-ribbon-bottom" src="<?php bloginfo('template_directory'); ?>/images/home/ribbon-bottom.png">
-        <img class="img-ribbon-top" src="<?php bloginfo('template_directory'); ?>/images/home/ribbon-top.png">
-        <div class="m-23">
-                <span class="footnote-m-2 r-3">Fast Quote <span style="font-size: 1vw;">or</span></span>
-                <span class="footnote-m-2 r-3">Just a Question?</span>
-                <div class="s-2" style="width:100%;background-color: #be0a2f;position: relative;">
-                    <div class="col-md-7 left cd-1 tw-container" style="z-index: 3;background-color: #be0a2f;">
-                        <br/>
-                        <span class="footnote-m-1 text-left" style="padding-left: 10px;">Have one of <br/>our wine cellar<br/>designers<br/> contact you</span>
-                        <br class="clear" /><br/>
-                        <a class="button-blue" href="#">Click Here</a>
+<?php
+/**
+Template Name: Homepage
+ */
+?>
+<?php get_header('pages'); ?>
+    <!-- container -->
+    <div class="page-container">
+        <div class="bg-container">
+            <section class="header">
+                <div class="row r-1 bg-block-content-1" style="padding-bottom: 0px;">
+                    <div class="wrap_content menu-desktop">
+                        <div class="col-md-4 left" style="position: relative;top: 0px;">
+                            <a href="<?php echo get_option('home'); ?>">
+                                <?php the_custom_logo(); ?>
+                            </a>
+                        </div>
+                        <div class="col-md-8 right">
+                            <span class="white right"><img src="<?php bloginfo('template_directory'); ?>/images/denver-home/phone.png"> Call us to receive your custom quote (xxx) xxx-xxxx</span>
+                            <br class="clear">
+                            <hr class="line-default">
+                            <?php get_template_part( 'template-parts/navigation/navigation', 'top' ); ?>
+                        </div>
                     </div>
-                    <div class="col-md-5 cd-2 left face-1 tw-container" style="z-index: 2;background-color: #be0a2f;position: relative;">
+                    <div class="menu-mobile clear">
+                        <div class="ft-4 left">
+                            <a href="<?php echo get_option('home'); ?>">
+                                <?php the_custom_logo(); ?>
+                            </a>
+                        </div>
+                        <div class="ft-8 left" style="padding: 0px;">
+                            <a href="#" id="pull" style="width: 100%;display: block;text-align: right;"><img style="height: 99px;" src="<?php bloginfo('template_directory'); ?>/images/denver-home/mobile-menu.jpg" alt="Menu"></a>
+                        </div>
+                    </div>
+                    <div class="wrap_content contact-mobile " style="padding-top:15px;padding-bottom:15px;background-color: #e0d6ab;">
+                        <div class="col-md-12 left">
+                            <span class="mobile-text">Call us to receive your custom quote</span>
+                            <a class="mobile-text-big" href="#">(123) 456-7890</a>
+                        </div>
                     </div>
                 </div>
-        </div>
-    </div>
-    <br class="clear">
-</section>
+            </section>
+            <section class="page-content">
+                <div class="wrap_content page-menu" style="padding-bottom: 0px;">
+                    <div class="col-md-3 left">
+                        <div class="left_menu">
+                            <?php
+                                $v = 0;
+                                $menuargs = array(
+                                    "theme_location" => "primary",
+                                    "menu_class" => "s-menu",
+                                    "menu_id" => "LEFT-MENU",
+                                );
+                                $items = wp_get_nav_menu_items( 'LEFT-MENU', $menuargs);
+                            ?>
+                            <ul class="left-menu-pages">
+                                <?php foreach( $items as $item ){ ?>
+                                    <li class="left-menu-item"><a href="<?php echo $item->url; ?>"><?php echo $item->title; ?></a></li>
+                                <?php } ?>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-9 left page-content-right">
+                        <?php
+                            while ( have_posts() ) : the_post();
+                                get_template_part( 'template-parts/page/content', 'page' );
+                            endwhile; // End of the loop.
+                        ?>
+                    </div>
+                </div>
+            </section>
 
-<section class="nav-2">
-    <?php 
-      $v = 0;
-      $menuargs = array(
-        "theme_location" => "primary",
-        "menu_class" => "s-menu",
-        "menu_id" => "LEFT-MENU",
-      );
-      $items_left = wp_get_nav_menu_items( 'LEFT-MENU', $menuargs); 
-    ?>
-    <div style="width: 100%;background-color: #ffebc8;">
-        <div style="background-color: #aea18b;padding-top: 1px;padding-bottom: 5px;padding-left: 10px;padding-right: 25px;">
-            <span class="footnote text-left">Project Features</span>
-        </div>
-        <br/>
-        <ul class="nav-pages">
-            <?php foreach( $items_left as $item ){ ?>
-                <li><a href="<?php echo $item->url; ?>"><?php echo $item->title; ?></a></li>
-            <?php } ?>
-        </ul>
-    </div>
-</section>
 <?php get_footer(); ?>
-
-
-
-

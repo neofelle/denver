@@ -1,0 +1,112 @@
+h1{
+	color:#660808;
+	font-size: 29px;
+    font-weight: 600;
+    font-family: 'montserrat-1';
+}
+h1.entry-title {
+    font-size: 30px !important;
+   	color:#660808 !important;
+}
+h2{
+	color:black;
+	font-size: 24px;
+    font-weight: 600;
+    font-family: 'montserrat-1';
+}
+h3{
+	color:#660808;
+	font-size: 22px;
+    font-weight: 600;
+    font-family: 'montserrat-1';
+}
+h1, h2, h3, h4{
+	padding: 0px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+a{
+	color:#660808;
+	font-size: 18px;
+}
+table{
+	border:0px;
+}
+tr {
+    border-bottom: 0px !important;
+}
+.form.container {
+    background-color: #660808;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 2px;
+}
+span.white-header {
+    color: white;
+    font-size: 28px;
+    text-align: center;
+    display: block;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+input.wpcf7-form-control.wpcf7-submit.form-submit {
+    display: block;
+    width: 100%;
+    background-color: #660808;
+    text-align: center;
+    border: 1px solid white;
+    font-size: 19px;
+    padding-top: 14px;
+    padding-bottom: 13px;
+}
+textarea.wpcf7-form-control.wpcf7-textarea {
+    height: 100px;
+    padding-top: 9px;
+    padding-bottom: 9px;
+}
+.wrap_content_pages{
+	width: 100%;
+	padding-left:20px;
+	padding-right:20px;
+}
+input.wpcf7-form-control.wpcf7-text.wpcf7-validates-as-required {
+    padding-top: 9px;
+    padding-bottom: 9px;
+}
+.img-blog{
+	width: 100%;
+    max-height: 300px;
+}
+.blog-txt{
+    text-align: justify;
+    color: black;
+    font-size: 14px;
+}
+a.blog-read {
+    background-color: #660808;
+    color: white;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border: 1px solid white;
+}
+.blog-block{
+	width: 100%;
+	display: block;
+	padding-bottom: 50px;
+	padding-top: 30px;
+	padding-left: 5px;
+}
+.blog-block:nth-child(even) {
+    background: #f5f0d5;
+}
+.next.page-numbers {
+    float: right;
+    background-color: #e0d6ab;
+}
+.prev.page-numbers{
+	float:left;
+    background-color: #e0d6ab;
+}
